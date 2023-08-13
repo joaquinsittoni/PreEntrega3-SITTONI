@@ -1,0 +1,207 @@
+/* Reset de estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+h1 {
+    color: #f9f9f9;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Contenedor de productos */
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Producto individual */
+.producto {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.producto h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.producto button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #0056b3;
+}
+
+/* Carrito de compras */
+#carrito {
+    border: 3px solid  #007bff;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    list-style-type: none;
+    border-radius: 5px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#carrito li {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(162, 151, 228);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#carrito img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+#carrito button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#carrito button:hover {
+    background-color: #c0392b;
+}
+
+#carro {
+    text-align: center;
+    color: #333;
+}
+
+p{
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.nombre-de-la-compañia {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ffffff;
+    margin: 10px auto;
+    width: 50%;
+}
+
+
+.finalizar-compra {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alineación de texto */
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Márgenes */
+    cursor: pointer; /* Cambio de cursor al pasar el mouse */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.finalizar-compra:hover {
+    background-color: #45a049; /* Color de fondo al pasar el mouse */
+}
+
+.finalizar-compra:active {
+    background-color: #357a38; /* Color de fondo al hacer clic */
+}
+
+
+
+
+#contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#contacto h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}

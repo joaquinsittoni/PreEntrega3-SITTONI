@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Celulares</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta name="description" content="© 2023 Joaco Phone. Todos los derechos reservados.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<header>    
+    <div>
+            <h1 class="nombre-de-la-compañia">Joaco Phone📲</h1>
+            <hr>
+        
+    </div>
+    
+
+</header>       
+
+<div id="productos">
+    <div class="producto">
+        <h2>iPhone 14</h2>
+        <p>Precio: $999</p>
+        <img src="img/iphone14.webp" alt="iphone 14">
+        <button class="agregar-carrito" data-producto="iPhone 14" data-precio="999">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+        <h2>Samsung Galaxy S23</h2>
+        <p>Precio: $899</p>
+        <img src="img/s23.webp" alt="Samsung s23">
+        <button class="agregar-carrito" data-producto="Samsung Galaxy S23" data-precio="899">Agregar al Carrito</button>
+    </div>
+    
+    <div class="producto">
+        <h2>Motorola edge 40pro</h2>
+        <p>Precio: $699</p>
+        <img src="img/motorola.webp" alt="Motorola edge 40pro">
+        <button class="agregar-carrito" data-producto="Motorola edge 40pro" data-precio="699">Agregar al Carrito</button>
+    </div>
+    
+    <div class="producto">
+        <h2>Xiaomi 13pro</h2>
+        <p>Precio: $799</p>
+        <img src="img/xiaomi.webp" alt="Xiaomi 13pro">
+        <button class="agregar-carrito" data-producto="Xiaomi 13pro" data-precio="799">Agregar al Carrito</button>
+    </div>
+
+
+
+</div>
+
+<h2 id="carro">Carrito de Compras🛒</h2> 
+<ul id="carrito">
+</ul>
+<p id="total"></p>
+
+<div id="contacto">
+    <h2>Contacto</h2>
+    <form id="formulario-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+
+<footer>
+    <p>&copy; 2023 Joaco Phone. Todos los derechos reservados.</p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
